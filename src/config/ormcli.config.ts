@@ -1,3 +1,5 @@
+// duplication required to make TypeORM CLI work properly
+
 export default {
   type: 'postgres',
   host: process.env.DB_HOST,
