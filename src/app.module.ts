@@ -13,7 +13,8 @@ import { UserModule } from './user/user.module'
       username: process.env.DB_USER,
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
-      synchronize: true // shouldn't be used in production
+      entities: ['../src/**/entities/**.entity{.ts,.js}'],
+      migrations: ['../src/migrations/*{.ts,.js}']
     }),
     UserModule
   ]
